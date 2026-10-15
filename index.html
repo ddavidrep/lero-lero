@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f3e9">
+  <meta name="description" content="Explora el menú de Lero Lero: pizzas, pastas, café, hamburguesas, crepas y mucho más en San Jerónimo Lídice.">
+  <title>Menú · Lero Lero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#menu">Ir al menú</a>
+  <div class="announcement"><span class="sparkle">✳</span> UN LUGAR PARA QUEDARTE, UNA CARTA PARA ANTOJARTE <span class="sparkle">✳</span></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#inicio" aria-label="Lero Lero, inicio">lero<span class="logo-dot">·</span>lero<span class="logo-star">✳</span><small>PIZZA & CAFÉ</small></a>
+      <nav class="desktop-nav" aria-label="Navegación principal"><a href="#menu">Nuestro menú</a><a href="#especialidades">Favoritos</a><a href="#visitanos">Visítanos</a></nav>
+      <button class="header-cta header-cart" id="headerCart" type="button" aria-label="Abrir carrito">Mi pedido <span aria-hidden="true">🛒</span><span class="header-cart-count" id="headerCartCount">0</span></button>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-decor hero-decor-a" aria-hidden="true">✿</div><div class="hero-decor hero-decor-b" aria-hidden="true">✳</div>
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="tiny-dot"></span> SAN JERÓNIMO LÍDICE · CDMX</span>
+        <h1 id="hero-title">El antojo<br><em>se comparte.</em></h1>
+        <p>Pizza para quedarse otro ratito, café para acompañar la plática y algo dulce para cerrar bonito.</p>
+        <div class="hero-actions"><a href="#menu" class="btn btn-dark">Explorar el menú <span>↘</span></a><a href="#visitanos" class="btn btn-outline">¿Dónde estamos? <span>↗</span></a></div>
+        <div class="hero-footnote"><span class="footnote-icon">✷</span> Hecho para disfrutar sin prisas.</div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-caption top-caption">SABOR QUE<br>HACE SONREÍR <span>☺</span></div>
+        <div class="hero-plate"><svg viewBox="0 0 560 560" role="img" aria-label="Ilustración decorativa de pizza" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="crust"><stop stop-color="#ffd88b"/><stop offset=".79" stop-color="#f4b956"/><stop offset="1" stop-color="#c7793c"/></radialGradient><radialGradient id="cheese"><stop stop-color="#ffeeb4"/><stop offset="1" stop-color="#f6ca67"/></radialGradient></defs><circle cx="280" cy="280" r="264" fill="#f4e9d4"/><circle cx="280" cy="280" r="236" fill="url(#crust)"/><circle cx="280" cy="280" r="211" fill="#c85846"/><circle cx="280" cy="280" r="198" fill="url(#cheese)"/><g fill="#d96c58" stroke="#bc4b40" stroke-width="5"><circle cx="194" cy="169" r="40"/><circle cx="333" cy="161" r="38"/><circle cx="401" cy="271" r="41"/><circle cx="306" cy="372" r="42"/><circle cx="170" cy="336" r="41"/><circle cx="252" cy="257" r="35"/></g><g fill="#54885c"><path d="M123 235q30-45 55 0-30 36-55 0Z"/><path d="M333 278q50-50 71 0-33 37-71 0Z"/><path d="M216 394q40-54 72-9-37 36-72 9Z"/><path d="M369 378q35-35 55 2-30 25-55-2Z"/><path d="M233 104q39-35 55 2-28 26-55-2Z"/></g><g fill="#fff0c4" opacity=".88"><circle cx="198" cy="248" r="9"/><circle cx="335" cy="221" r="12"/><circle cx="227" cy="321" r="8"/><circle cx="360" cy="330" r="8"/></g></svg></div>
+        <div class="round-stamp">PIZZA · CAFÉ · POSTRES · <span>♥</span></div>
+        <div class="art-caption bottom-caption">TU MESA<br>TE ESPERA <span>↗</span></div>
+      </div>
+    </section>
+    <div class="ticker" aria-hidden="true"><div>ALGO RICO PARA TODOS <span>✳</span> PIZZAS <span>✳</span> CAFÉ <span>✳</span> CREPAS <span>✳</span> PASTAS <span>✳</span> ALGO RICO PARA TODOS <span>✳</span> PIZZAS <span>✳</span> CAFÉ <span>✳</span> CREPAS <span>✳</span></div></div>
+    <section class="menu-section" id="menu" aria-labelledby="menu-title">
+      <div class="section-container">
+        <div class="section-intro"><div><span class="eyebrow">✳ LO BUENO ESTÁ AQUÍ</span><h2 id="menu-title">¿Qué se te <em>antoja?</em></h2><p>Elige tus favoritos, agrégalos al carrito y prepara tu pedido para enviarlo por WhatsApp.</p></div><div class="intro-sticker" aria-hidden="true">ELIGE<br>ALGO<br>RICO <span>↗</span></div></div>
+        <div class="menu-toolbar"><label class="search-box" for="menuSearch"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="menuSearch" type="search" placeholder="Busca tu antojo... pizza, latte, tiramisú" autocomplete="off"><kbd>/</kbd></label><div class="results-count" id="resultsCount" aria-live="polite"></div></div>
+        <div class="category-bar" id="categoryBar" role="group" aria-label="Filtrar por categoría"></div>
+        <div class="menu-headline"><div><span class="category-kicker" id="categoryKicker">LA CARTA COMPLETA</span><h3 id="categoryHeading">Para todos los gustos.</h3></div><button class="reset-button" id="resetButton" type="button" hidden>Limpiar filtros ↗</button></div>
+        <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+        <div class="empty-state" id="emptyState" hidden><span>✳</span><h3>Uy, ese antojo no aparece.</h3><p>Prueba con otro nombre o explora una categoría diferente.</p><button type="button" class="btn btn-dark" id="emptyReset">Ver todo el menú ↗</button></div>
+        <p class="menu-disclaimer">Propuesta no oficial. Carta y precios de referencia sujetos a confirmación. Los pedidos por WhatsApp no se envían ni se preparan hasta que el restaurante los confirme.</p>
+      </div>
+    </section>
+    <section class="featured" id="especialidades"><div class="section-container featured-inner"><div class="featured-text"><span class="eyebrow">UN POCO DE TODO</span><h2>Ven por la pizza.<br><em>Quédate por el postre.</em></h2><p>Desde un espresso hasta una rebanada de pastel Bruce: siempre hay una buena excusa para volver.</p><a href="#menu" class="btn btn-light">Descubrir la carta <span>↗</span></a></div><div class="featured-graphic" aria-hidden="true"><div class="featured-circle"><span>✷</span><strong>lero<br>lero!</strong><small>SIEMPRE HAY ESPACIO PARA EL POSTRE</small></div></div></div></section>
+    <section class="visit" id="visitanos"><div class="section-container visit-inner"><div><span class="eyebrow">NOS VEMOS PRONTO</span><h2>Tu mesa está <em>por aquí.</em></h2><p>Magnolia 190, San Jerónimo Lídice,<br>La Magdalena Contreras, CDMX.</p><div class="visit-actions"><a class="btn btn-dark" href="https://maps.google.com/?q=Magnolia+190+San+Jeronimo+Lidice+CDMX" target="_blank" rel="noopener noreferrer">Cómo llegar ↗</a><a class="btn btn-outline" href="tel:+525569954458">Llamar al restaurante ↗</a></div></div><div class="hours-card"><span class="hours-icon">✿</span><h3>Nos vemos de martes a domingo</h3><dl><div><dt>Mar – Sáb</dt><dd>1:00 pm – 9:30 pm</dd></div><div><dt>Domingo</dt><dd>1:00 pm – 9:00 pm</dd></div><div><dt>Lunes</dt><dd>Cerrado</dd></div></dl><p>¡Te esperamos!</p></div></div></section>
+  </main>
+  <footer class="footer"><div class="section-container footer-top"><div class="footer-logo">lero<span>·</span>lero<small>PIZZA & CAFÉ</small></div><p>La vida sabe mejor cuando se comparte.</p><a href="#inicio">Volver arriba ↑</a></div><div class="section-container footer-bottom"><span>© 2026 Lero Lero · Propuesta visual de menú (no oficial).</span><span>Todos los precios en MXN · Incluyen IVA según el sitio original.</span></div></footer>
+  <dialog id="productDialog" class="product-dialog" aria-labelledby="dialogTitle"><button class="dialog-close" id="dialogClose" type="button" aria-label="Cerrar detalle">×</button><div class="dialog-visual" id="dialogVisual"><span id="dialogIcon">🍕</span><span class="dialog-visual-label">LERO LERO · MENÚ</span></div><div class="dialog-content"><span class="dialog-category" id="dialogCategory"></span><h2 id="dialogTitle"></h2><p id="dialogDescription"></p><div class="dialog-price"><span>Precio de referencia</span><strong id="dialogPrice"></strong></div>
+        <label class="order-field">Indicaciones para este platillo
+          <textarea id="productNotes" rows="2" maxlength="250" placeholder="Ej. sin cebolla, salsa aparte... (sujeto a disponibilidad)"></textarea>
+        </label>
+        <div class="dialog-order-row">
+          <div class="quantity-stepper" aria-label="Cantidad">
+            <button type="button" id="qtyMinus" aria-label="Restar uno">−</button>
+            <output id="productQuantity" aria-live="polite">1</output>
+            <button type="button" id="qtyPlus" aria-label="Sumar uno">+</button>
+          </div>
+          <strong id="productLineTotal"></strong>
+        </div><p class="dialog-notice">Consulta disponibilidad, ingredientes y precio vigente con nuestro personal.</p><button type="button" class="btn btn-dark dialog-done" id="dialogDone">Agregar al carrito <span aria-hidden="true">＋</span></button></div></dialog>
+  <!-- PANEL DE PEDIDOS -->
+  <div class="cart-backdrop" id="cartBackdrop" hidden></div>
+  <aside class="order-drawer" id="orderDrawer" role="dialog" aria-modal="true" aria-labelledby="orderDrawerTitle" aria-hidden="true" inert>
+    <header class="order-drawer-header">
+      <div><span class="eyebrow">✳ LERO LERO</span><h2 id="orderDrawerTitle">Tu pedido <span id="drawerCount"></span></h2></div>
+      <button type="button" class="drawer-close" id="closeDrawer" aria-label="Cerrar carrito">×</button>
+    </header>
+    <div class="order-drawer-body">
+      <div id="cartLines" class="cart-lines"></div>
+      <div id="cartEmpty" class="cart-empty"><span>🍕</span><h3>Aún no hay nada aquí.</h3><p>Agrega algo rico de la carta para comenzar.</p><button type="button" id="continueShopping" class="btn btn-outline">Explorar menú ↗</button></div>
+      <div id="checkoutForm" hidden>
+        <div class="cart-divider"></div>
+        <h3>¿Cómo recibirás tu pedido?</h3>
+        <div class="fulfillment-switch">
+          <label><input type="radio" name="fulfillment" value="recoger" checked> Para recoger</label>
+          <label><input type="radio" name="fulfillment" value="domicilio"> A domicilio</label>
+        </div>
+        <label class="order-field">Tu nombre <input id="customerName" maxlength="80" autocomplete="name" placeholder="Nombre de quien ordena"></label>
+        <label class="order-field">Teléfono de contacto (opcional) <input id="customerPhone" type="tel" maxlength="25" autocomplete="tel" placeholder="10 dígitos"></label>
+        <div id="deliveryFields" hidden>
+          <label class="order-field">Dirección de entrega <textarea id="deliveryAddress" rows="3" maxlength="300" placeholder="Calle, número, colonia, referencias..."></textarea></label>
+          <p class="delivery-notice">El costo de envío se confirma con el restaurante por WhatsApp. No está incluido en el total mostrado.</p>
+        </div>
+        <label class="order-field">Comentarios generales (opcional) <textarea id="orderNotes" rows="2" maxlength="300" placeholder="Alguna indicación para tu pedido..."></textarea></label>
+      </div>
+    </div>
+    <footer class="order-drawer-footer" id="drawerFooter" hidden>
+      <div class="order-subtotal"><span>Subtotal de productos</span><strong id="cartTotal">$0</strong></div>
+      <p class="order-warning">Precios sujetos a confirmación. Envío no incluido. El pedido solo queda solicitado cuando el restaurante lo confirme.</p>
+      <button type="button" class="btn btn-dark order-send" id="sendWhatsapp">Preparar pedido por WhatsApp ↗</button>
+      <button type="button" class="copy-order" id="copyOrder">Copiar pedido al portapapeles</button>
+      <button type="button" class="clear-order" id="clearCart">Vaciar carrito</button>
+    </footer>
+  </aside>
+  <button type="button" class="floating-cart" id="floatingCart" aria-label="Ver mi pedido" hidden>🛒 <span id="floatingCartCount">0</span> · Ver pedido</button>
+  <div class="toast" id="orderToast" role="status" aria-live="polite"></div>
+</body>
+</html>
